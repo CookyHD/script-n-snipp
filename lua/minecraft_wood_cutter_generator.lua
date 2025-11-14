@@ -91,7 +91,6 @@ for _, wood_type in pairs({
 		wood_type.."_sign",
 	})
 	stonecutter("stripped_"..wood_type.."_log",{
-		"stripped_"..wood_type.."_wood",
 		{wood_type.."_planks",4},
 		{wood_type.."_slab",8},
 		{wood_type.."_stairs",4},
@@ -117,8 +116,8 @@ for _, wood_type in pairs({
 		{wood_type.."_sign",4},
 		wood_type.."_shelf"
 	})
-	stonecutter(wood_type.."_wood",{
-		"stripped_"..wood_type.."_wood",
+	stonecutter(wood_type.."_log",{
+		"stripped_"..wood_type.."_log",
 		{wood_type.."_planks",4},
 		{wood_type.."_slab",8},
 		{wood_type.."_stairs",4},
@@ -131,9 +130,7 @@ for _, wood_type in pairs({
 		{wood_type.."_sign",4},
 		wood_type.."_shelf"
 	})
-	stonecutter(wood_type.."_log",{
-		"stripped_"..wood_type.."_log",
-		wood_type.."_wood",
+	stonecutter(wood_type.."_wood",{
 		"stripped_"..wood_type.."_wood",
 		{wood_type.."_planks",4},
 		{wood_type.."_slab",8},
@@ -168,7 +165,6 @@ for _, wood_type in pairs({
 		wood_type.."_sign",
 	})
 	stonecutter("stripped_"..wood_type.."_stem",{
-		"stripped_"..wood_type.."_hyphae",
 		{wood_type.."_planks",4},
 		{wood_type.."_slab",8},
 		{wood_type.."_stairs",4},
@@ -182,6 +178,20 @@ for _, wood_type in pairs({
 		wood_type.."_shelf"
 	})
 	stonecutter("stripped_"..wood_type.."_hyphae",{
+		{wood_type.."_planks",4},
+		{wood_type.."_slab",8},
+		{wood_type.."_stairs",4},
+		{wood_type.."_door",4},
+		{wood_type.."_trapdoor",4},
+		{wood_type.."_button",4},
+		{wood_type.."_pressure_plate",4},
+		{wood_type.."_fence",4},
+		{wood_type.."_fence_gate",4},
+		{wood_type.."_sign",4},
+		wood_type.."_shelf"
+	})
+	stonecutter(wood_type.."_stem",{
+		"stripped_"..wood_type.."_stem",
 		{wood_type.."_planks",4},
 		{wood_type.."_slab",8},
 		{wood_type.."_stairs",4},
@@ -208,23 +218,57 @@ for _, wood_type in pairs({
 		{wood_type.."_sign",4},
 		wood_type.."_shelf"
 	})
-	stonecutter(wood_type.."_stem",{
-		"stripped_"..wood_type.."_stem",
-		wood_type.."_hyphae",
-		"stripped_"..wood_type.."_hyphae",
-		{wood_type.."_planks",4},
-		{wood_type.."_slab",8},
-		{wood_type.."_stairs",4},
-		{wood_type.."_door",4},
-		{wood_type.."_trapdoor",4},
-		{wood_type.."_button",4},
-		{wood_type.."_pressure_plate",4},
-		{wood_type.."_fence",4},
-		{wood_type.."_fence_gate",4},
-		{wood_type.."_sign",4},
-		wood_type.."_shelf"
-	})
 end
+
+wood_type = "bamboo"
+
+stonecutter(wood_type.."_planks",{
+	wood_type.."_mosaic",
+	{wood_type.."_slab",2},
+	{wood_type.."_mosaic_slab",2},
+	wood_type.."_stairs",
+	wood_type.."_mosaic_stairs",
+	wood_type.."_door",
+	wood_type.."_trapdoor",
+	wood_type.."_button",
+	wood_type.."_pressure_plate",
+	wood_type.."_fence",
+	wood_type.."_fence_gate",
+	wood_type.."_sign",
+})
+stonecutter(wood_type.."_block",{
+	"stripped_"..wood_type.."_block",
+	{wood_type.."_planks",2},
+	{wood_type.."_mosaic_planks",2},
+	{wood_type.."_slab",4},
+	{wood_type.."_mosaic_slab",4},
+	{wood_type.."_stairs",2},
+	{wood_type.."_mosaic_stairs",2},
+	{wood_type.."_door",2},
+	{wood_type.."_trapdoor",2},
+	{wood_type.."_button",2},
+	{wood_type.."_pressure_plate",2},
+	{wood_type.."_fence",2},
+	{wood_type.."_fence_gate",2},
+	{wood_type.."_sign",2},
+	wood_type.."_shelf"
+})
+stonecutter("stripped_"..wood_type.."_block",{
+	{wood_type.."_planks",2},
+	{wood_type.."_mosaic_planks",2},
+	{wood_type.."_slab",4},
+	{wood_type.."_mosaic_slab",4},
+	{wood_type.."_stairs",2},
+	{wood_type.."_mosaic_stairs",2},
+	{wood_type.."_door",2},
+	{wood_type.."_trapdoor",2},
+	{wood_type.."_button",2},
+	{wood_type.."_pressure_plate",2},
+	{wood_type.."_fence",2},
+	{wood_type.."_fence_gate",2},
+	{wood_type.."_sign",2},
+	wood_type.."_shelf"
+})
 
 --LOGIC END
 
