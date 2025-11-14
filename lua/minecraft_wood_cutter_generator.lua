@@ -1,3 +1,6 @@
+
+--[[ THIS SHOULD GENERATE AROUND 1300+ FILES FOR MINERAFT WOOD CUTTIN ]]--
+
 print("EXECUTION STARTED\n")
 
 os.execute("mkdir recipe")
